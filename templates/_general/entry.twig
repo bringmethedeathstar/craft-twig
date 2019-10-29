@@ -1,0 +1,7 @@
+{#
+  Example of dynamic templates per entry type
+
+  Craft is pointed to this template from within the CMS
+#}
+
+{% include '_stuff/' ~ entry.type.handle %}
