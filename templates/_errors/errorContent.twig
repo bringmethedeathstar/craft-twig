@@ -1,0 +1,9 @@
+{% set home = craft.entries.slug('__home__').with(['errorContent']).one() ?? null %}
+
+{% block error %}
+  <div class="container">
+    <div class="error-card">
+      {{ home.errorContent[0]['e' ~ code] ?? 'An error occured.' }}
+    </div>
+  </div>
+{% endblock %}
