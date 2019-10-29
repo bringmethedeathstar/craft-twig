@@ -1,0 +1,37 @@
+@import './colours.scss';
+
+$colours: (
+  white: $white,
+  black: $black,
+);
+
+@each $name, $colour in $colours {
+  .bg-#{$name} {
+    background-color: $colour;
+
+    &-shade {
+      background-color: rgba($colour, 0.8);
+    }
+  }
+
+  .fg-#{$name} {
+    color: $colour;
+
+    ::selection,
+    &::selection {
+      background-color: $colour;
+    }
+  }
+
+  .fill-#{$name} {
+    fill: $colour;
+  }
+
+  .border-#{$name} {
+    border-color: $colour;
+  }
+
+  .hover-border-#{$name}:hover {
+    border-color: $colour;
+  }
+}

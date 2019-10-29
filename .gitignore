@@ -1,0 +1,9 @@
+/.env
+/.idea
+/vendor
+uploads
+templates/_base.twig
+web/assets
+.DS_Store
+.env.sh
+node_modules

@@ -1,0 +1,17 @@
+@mixin at-least($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin until($device-width) {
+  @media screen and (max-width: $device-width - 0.2px) {
+    @content;
+  }
+}
+
+$xsmall: 400px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;

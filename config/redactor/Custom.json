@@ -1,0 +1,56 @@
+{
+  "buttons": [
+    "html",
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link",
+    "image"
+  ],
+
+  "toolbarFixed": true,
+
+  "imageResizable": true,
+
+  "imagePosition": {
+    "left": "redactor-image-left",
+    "right": "redactor-image-right",
+    "center": "redactor-image-center"
+  },
+
+  "formattingAdd": {
+    "large-text": {
+      "title": "Large Text",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "large-text",
+        "type": "toggle"
+      }
+    },
+
+    "button": {
+      "title": "Button",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "redactor-button",
+        "type": "toggle"
+      }
+    },
+
+    "block": {
+      "title": "Block",
+      "api": "module.block.format",
+      "args": {
+        "tag": "div",
+        "class": "redactor-block",
+        "type": "toggle"
+      }
+    }
+  },
+
+  "formattingHide": ["pre", "h4", "h5", "h6"]
+}
