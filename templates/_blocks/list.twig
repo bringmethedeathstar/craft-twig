@@ -1,0 +1,5 @@
+{# Example of dynamic blocks #}
+
+{% for block in entry.blocks.all() %}
+  {% include '_blocks/' ~ block.type %}
+{% endfor %}
