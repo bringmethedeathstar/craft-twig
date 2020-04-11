@@ -1,9 +1,6 @@
 module.exports = {
-  // parser: 'sugarss',
-  plugins: {
-    autoprefixer: {},
-    // 'postcss-import': {},
-    'postcss-preset-env': {},
-    // cssnano: {},
-  },
-};
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ]
+}

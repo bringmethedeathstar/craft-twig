@@ -1,0 +1,7 @@
+/*
+  All custom utilities live in this file, after `@tailwind utilities`.
+  This is pretty important to avoid specifity issues & other nasty bugs 🐛
+  https://tailwindcss.com/docs/adding-new-utilities#using-css
+*/
+
+@import 'tailwindcss/utilities';

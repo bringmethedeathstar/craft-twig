@@ -1,0 +1,7 @@
+/*
+  All component styles live in this file, after `@tailwind components` & before `@tailwind utilities`.
+  This is pretty important to avoid specifity issues & other nasty bugs 🐛
+  https://tailwindcss.com/docs/extracting-components#extracting-css-components-with-apply
+*/
+
+@import 'tailwindcss/components';

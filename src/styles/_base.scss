@@ -1,0 +1,14 @@
+/*
+  All base styles live in this file, after `@tailwind base` & before `@tailwind components`.
+  This is pretty important to avoid specifity issues & other nasty bugs 🐛
+  https://tailwindcss.com/docs/adding-base-styles#using-css
+*/
+
+@import 'tailwindcss/base';
+
+body {
+  @apply py-6;
+
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
