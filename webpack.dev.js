@@ -94,7 +94,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.html$/,
+        test: /\.(html|twig)$/,
         use: ['raw-loader'],
       },
       {
